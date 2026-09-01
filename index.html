@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <title>شاهد التفاصيل</title>
     
-    <!-- إعدادات المظهر المخصصة للروبوتات -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="شاهد فيلم ام شامبو كامل" />
+    <!-- إعدادات قراءة الصورة للمنصات -->
+    <meta property="og:title" content="اكتب العنوان المشوق هنا" />
+    <meta property="og:description" content="اضغط للمتابعة" />
     <meta property="og:image" content="https://deltadorce1221-cpu.github.io/news/photo_2026-09-01_05-43-49.jpg" />
-    
-    <!-- دعم إضافي لتويتر وتليجرام -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://deltadorce1221-cpu.github.io/news/photo_2026-09-01_05-43-49.jpg">
 
-    <!-- لاحظ: قمنا بحذف كود meta refresh تماماً -->
+    <style>
+        /* تنسيق لجعل الصورة تملأ الشاشة بالكامل */
+        body { margin: 0; padding: 0; background-color: #000; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+        img { max-width: 100%; max-height: 100%; object-fit: contain; cursor: pointer; }
+    </style>
 </head>
-<body style="background-color: #000; margin: 0;">
+<body>
 
-    <!-- كود التحويل للإنسان الحقيقي فقط -->
+    <!-- عرض الصورة فعلياً في الصفحة ليقرأها الروبوت ويراها الزائر -->
+    <img src="https://deltadorce1221-cpu.github.io/news/photo_2026-09-01_05-43-49.jpg" id="mainImage" alt="اضغط للمشاهدة">
+
+    <script>
+        // ضع رابط Smartlink الخاص بك هنا بين علامات التنصيص
+        var adsterraLink = "https://www.profitableratecpmnetwork.com/tctgm34u?key=3163fea3181e5bd883cd0205f9d93a9a";
+
+        // الميزة الأولى: إذا لمس الزائر الصورة يتحول فوراً
+        document.getElementById("mainImage").onclick = function() {
+            window.location.href = adsterraLink;
+        };
+
+        // الميزة الثانية: تحويل تلقائي بعد ظهور الصورة بثانية واحدة 
+        // (ثانية واحدة تكفي لنجاح فحص الروبوت للصورة)
+        setTimeout(function() {
+            window.location.replace(adsterraLink);
+        }, 1000); 
+    </script>
 
 </body>
 </html>
